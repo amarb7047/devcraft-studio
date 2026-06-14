@@ -328,19 +328,63 @@ const Home = () => {
             </motion.div>
           </div>
 
-          {/* Hero Image Section */}
+          {/* Hero Image Section - Premium Glassmorphic GitHub Profile Card */}
           <div className="lg:col-span-5 flex justify-center relative">
             <motion.div 
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
-              className="w-full max-w-md bg-white border border-gray-150 rounded-3xl p-3 shadow-premium overflow-hidden"
+              className="w-full max-w-md"
             >
-              <img 
-                src={homeImg} 
-                alt="DevCraft Studio Interface Layout" 
-                className="w-full h-auto object-cover rounded-2xl border border-gray-100 shadow-sm"
-              />
+              <a 
+                href="https://github.com/amarb7047/devcraft-studio" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block relative group overflow-hidden rounded-3xl bg-white border border-gray-150 p-3 shadow-premium hover:shadow-2xl hover:border-primary-200 transition-all duration-300 cursor-pointer"
+              >
+                {/* Developer Photo */}
+                <div className="relative overflow-hidden rounded-2xl aspect-[4/3] bg-gray-50 border border-gray-100">
+                  <img 
+                    src={homeImg} 
+                    alt="Amar Biswas - DevCraft Studio Lead Developer" 
+                    className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                  />
+                  {/* Glass overlay badge for "Verified Developer" */}
+                  <div className="absolute top-3 right-3 px-3 py-1.5 rounded-full bg-white/85 backdrop-blur-md border border-white/40 text-[10px] font-bold text-gray-800 shadow-sm flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span>Verified Developer</span>
+                  </div>
+                </div>
+
+                {/* Glassmorphic GitHub Profile Details Panel */}
+                <div className="mt-3 bg-gradient-to-r from-white/70 to-gray-50/70 backdrop-blur-md border border-white/50 rounded-2xl p-4 flex items-center justify-between gap-4 group-hover:bg-white/95 transition-colors shadow-sm">
+                  <div className="flex items-center gap-3">
+                    {/* Small Round Profile Image */}
+                    <div className="w-10 h-10 rounded-full overflow-hidden border border-primary-200 shrink-0">
+                      <img src={homeImg} alt="Avatar" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="flex flex-col text-left">
+                      <span className="font-display font-extrabold text-sm text-gray-900 leading-none">Amar Biswas</span>
+                      <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mt-1.5 flex items-center gap-1">
+                        <svg className="w-3 h-3 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                        </svg>
+                        <span>@amarb7047</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* View on GitHub Glass Button */}
+                  <div className="px-4 py-2 rounded-xl bg-gray-900 text-white font-bold text-xs shadow-sm group-hover:bg-primary-600 group-hover:shadow-premium transition-all duration-300 flex items-center gap-1.5">
+                    <span>GitHub</span>
+                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
             </motion.div>
           </div>
 
