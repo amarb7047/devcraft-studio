@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="logo-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A56DB" />
+      <stop offset="100%" stop-color="#4F46E5" />
+    </linearGradient>
+    <linearGradient id="logo-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Left Angle Bracket '<' -->
+  <path d="M32 25 L12 50 L32 75" 
+        stroke="url(#logo-primary)" 
+        stroke-width="10" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+        
+  <!-- Right Angle Bracket '>' -->
+  <path d="M68 25 L88 50 L68 75" 
+        stroke="url(#logo-primary)" 
+        stroke-width="10" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+        
+  <!-- Center Diagonal Slash '/' -->
+  <path d="M58 15 L42 85" 
+        stroke="url(#logo-accent)" 
+        stroke-width="10" 
+        stroke-linecap="round" />
+        
+  <!-- Core Star/Diamond of Craft in the center -->
+  <path d="M50 38 L56 50 L50 62 L44 50 Z" 
+        fill="url(#logo-accent)" />
+</svg>
